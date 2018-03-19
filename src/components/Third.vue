@@ -111,16 +111,7 @@ p{
     width:30.9%;
     height: 670px;
     float: right;
-  
     border: 1px solid purple;
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
 }
 </style>
 

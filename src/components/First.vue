@@ -3,7 +3,7 @@
     <table  style="width:100%;border:1px solid #ddd">
         <tr style="height:60px;width:100%;border-bottom:1px solid #ddd">
             <td style="text-align:center;border-left:1px solid #ddd">时间</td>
-            <td style="text-align:center;border-left:1px solid #ddd">题目</td>
+            <td style="text-align:center;border-left:1px solid #ddd">题目111</td>
             <td style="text-align:center;border-left:1px solid #ddd">演讲人</td>
         </tr>
         <tr class="bg" v-for="person in people" :key="person.id">

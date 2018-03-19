@@ -15,8 +15,8 @@ const config = {
   },
   output: {
     path: path.join(__dirname, '../dist'),
-    filename: '[name].[hash].js'
-    // publicPath: '/public/'
+    filename: '[name].[hash].js',
+    publicPath: ''
   },
   resolve: {
     alias: {
@@ -64,7 +64,7 @@ const config = {
         loader: 'url-loader',
         options: {
           name: '[name].[md5:hash:base64:6].[ext]',
-          outputPath: 'public/img',
+          outputPath: 'public/img/',
           limit: 1024
         }
       },
@@ -82,7 +82,7 @@ const config = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'cb landing page',
+      title: 'templetename',
       filename: 'index.html',
       hash: true,
       template: path.join(__dirname, '../src/templete.html'),
@@ -98,9 +98,9 @@ if (isDev) {
     overlay: {
       errors: true
     },
-    publicPath: '/public/',
+    // publicPath: '/public/',
     historyApiFallback: {
-      index: '/public/index.html'
+      index: 'index.html'
     }
   }
 }

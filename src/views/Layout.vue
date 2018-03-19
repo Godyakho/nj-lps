@@ -3,28 +3,27 @@
 *  Created On : Mon Mar 12 2018
 ******************************************* -->
 <template>
-	<div>
-		<First></First>
-		<Third></Third>
-		<Second></Second>
+	<div class="basewidth">
+		<author></author>
+		<newslist></newslist>
 	</div>
 </template>
 
 <script type="text/ecmascript-6">
-import First from 'components/First.vue'
-import Second from 'components/Second.vue'
-import Third from 'components/Third.vue'
+import author from 'components/author.vue'
+import newslist from 'components/newslist.vue'
 export default {
-	data: () => ({message: 'Layout VUE is here!!!!'}),
+	data: () => ({
+		message: 'Layout VUE is here!!!!'
+		}),
 	components: {
-	First,
-	Third,
-	Second
+		author,
+		newslist
     },
 	created: function() {
 		this.$(function() {
 			console.log('-----------------------')
-			console.log(1111)
+			console.log('this is created')
 			console.log('-----------------------')	
 		})
 	}
@@ -32,5 +31,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (min-width: 500px) {
+    .basewidth {
+		width: 1100px;
+		margin: 0 auto
+    }
+}
 
 </style>
